@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我们的一周年甜蜜问卷</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff6f8;
+      color: #333;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #d63384;
+    }
+    .question {
+      margin: 20px 0;
+      padding: 15px;
+      border-left: 4px solid #ffc0cb;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .options {
+      margin-top: 10px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .submit-btn {
+      background-color: #d63384;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .submit-btn:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+  <h1>💖我们的一周年甜蜜问卷💖</h1>
+  <p>by：[你的名字]<br>献给我最爱的：[她的名字]</p>
+
+  <h2>第一部分：温馨回忆 🥰</h2>
+  <div class="question">
+    <label>1. 你还记得我们第一次约会是什么时候吗？</label>
+    <input type="text" name="first_date">
+  </div>
+
+  <div class="question">
+    <label>2. 我说过最让你感动的一句话是？</label>
+    <textarea name="most_touching"></textarea>
+  </div>
+
+  <div class="question">
+    <label>3. 这一年中，你最喜欢我们一起做的三件事是？</label>
+    <input type="text" name="fav1">
+    <input type="text" name="fav2">
+    <input type="text" name="fav3">
+  </div>
+
+  <div class="question">
+    <label>4. 选一张我们一起拍的照片，并说说那一刻你在想什么？</label>
+    <input type="text" name="photo_memory">
+  </div>
+
+  <div class="question">
+    <label>5. 如果要给我们的这一年起个电影名，你会起什么名字？为什么？</label>
+    <textarea name="movie_title"></textarea>
+  </div>
+
+  <h2>第二部分：甜蜜测试 💘</h2>
+  <div class="question">
+    <label>6. 我的生日是？</label>
+    <input type="text" name="birthday">
+  </div>
+
+  <div class="question">
+    <label>7. 以下哪一项不是我最爱的食物？</label>
+    <div class="options">
+      <label><input type="radio" name="not_favorite" value="hotpot"> 火锅</label>
+      <label><input type="radio" name="not_favorite" value="sushi"> 寿司</label>
+      <label><input type="radio" name="not_favorite" value="durian"> 榴莲</label>
+      <label><input type="radio" name="not_favorite" value="duck"> 烤鸭</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>8. 当我生气时，最有效的哄我方式是？</label>
+    <div class="options">
+      <label><input type="radio" name="cheerup" value="milk_tea"> 给我买奶茶</label>
+      <label><input type="radio" name="cheerup" value="hug"> 抱我不说话</label>
+      <label><input type="radio" name="cheerup" value="joke"> 跟我讲冷笑话</label>
+      <label><input type="radio" name="cheerup" value="ignore"> 假装什么都没发生</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>9. 我最喜欢你做的一件小事是？</label>
+    <textarea name="fav_little_thing"></textarea>
+  </div>
+
+  <div class="question">
+    <label>10. 你觉得我身上最迷人的三个地方是？</label>
+    <input type="text" name="charm1">
+    <input type="text" name="charm2">
+    <input type="text" name="charm3">
+  </div>
+
+  <h2>第三部分：情话慢慢说 💌</h2>
+  <div class="question">
+    <label>11. 用一句话描述你眼中的我。</label>
+    <textarea name="describe_me"></textarea>
+  </div>
+
+  <div class="question">
+    <label>12. 如果可以对一年后的我说一句话，你会说什么？</label>
+    <textarea name="future_message"></textarea>
+  </div>
+
+  <div class="question">
+    <label>13. 选一句你最喜欢的情话送给我：</label>
+    <div class="options">
+      <label><input type="radio" name="love_quote" value="quote1"> 遇见你，是我今生最美的意外。</label>
+      <label><input type="radio" name="love_quote" value="quote2"> 我没有特别喜欢什么，但你特别特别重要。</label>
+      <label><input type="radio" name="love_quote" value="quote3"> 你是我安稳生活的来由，也是我心之所向。</label>
+      <label><input type="text" name="custom_quote" placeholder="自创一句情话"></label>
+    </div>
+  </div>
+
+  <div class="question">
+    <label>14. 如果这份问卷是一本书的开头，那你希望结尾写什么？</label>
+    <textarea name="book_ending"></textarea>
+  </div>
+
+  <div class="question">
+    <label>15. 请在最后留一句你最想对我说的话吧！</label>
+    <textarea name="final_words"></textarea>
+  </div>
+
+  <div style="text-align:center; margin-top:30px;">
+    <button class="submit-btn" onclick="alert('提交成功！你的答案我会认真保存哦 ❤️')">提交问卷</button>
+  </div>
+</body>
+</html>
